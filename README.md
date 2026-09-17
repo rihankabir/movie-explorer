@@ -1,16 +1,45 @@
-# React + Vite
+# 🎬 Movie Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive Movie Explorer web application built with React, Bootstrap, React Router, and the TVMaze API.
 
-Currently, two official plugins are available:
+The application allows users to explore movies and shows, search for titles, view ratings and release information, and see detailed information in a responsive modal.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- 🏠 Responsive Home page
+- 🎬 Movie Explorer hero section
+- 🔎 Search movies and shows by title
+- 📋 Dynamic movie/show listing
+- 🖼️ Responsive poster images
+- ⭐ Show ratings
+- 📅 Release date and year
+- 🎭 Genre information
+- 📖 Detailed information modal
+- ❌ Modal close button
+- 🖱️ Click outside modal to close
+- 📱 Fully responsive design
+- 🧭 React Router navigation
+- ⚡ Data loaded dynamically from the TVMaze API
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies Used
 
-## Expanding the ESLint configuration
+- React
+- JavaScript
+- Vite
+- React Router
+- Bootstrap
+- CSS
+- TVMaze API
+- Git
+- GitHub
+- Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔌 API
+
+This project uses the free [TVMaze API](https://api.tvmaze.com/) to retrieve show information.
+
+### API Endpoints
+
+Get all shows:
+
+https://api.tvmaze.com/shows
