@@ -12,7 +12,7 @@ return(
 </p>
 <h1 className="hero-title">Discover Your Next <span>Favourite Movie</span></h1>
 <p className="hero-desc">Explore thousands of Movies and Shows</p>
-<Link to="/Movies" className="btn btn-primary btn-lg px-4 py-3">Explore Movies</Link>
+<Link to="/Movies" className="btn btn-primary btn-lg px-4 py-3 hero-button">Explore Movies</Link>
 
 
         </div>
