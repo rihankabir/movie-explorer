@@ -173,6 +173,15 @@ object-fit: cover;
     color: #ffffff;
     margin-bottom: 20px;
 }
+.movie-modal-content p {
+    color: #cbd5e1;
+}
+
+.movie-summary {
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin-top: 20px;
+}
 
 
 @media(max-width:991px) {
@@ -190,6 +199,18 @@ object-fit: cover;
   .hero-desc{
     font-size: 16px;
   }
+    .movie-modal-image {
+        height: 400px;
+        min-height: auto;
+    }
+
+    .movie-modal-no-image {
+        min-height: 300px;
+    }
+
+    .movie-modal-content {
+        padding: 30px 20px;
+    }
 }
 @media (max-width:576px){
   .hero-title{

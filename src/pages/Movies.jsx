@@ -16,15 +16,15 @@ useEffect(() => {
             const data = await getAllShows();
             setShows(data);
 
-        } catch(error){
-            setError("Failed to fetch movies");
+        } catch{
+            setError("Failed to fetch movies.");
 
         }finally{
             setLoading(false)
         }
     }
     fetchShows();
-},[] )
+},[] );
 
 async function handleSearch(event) {
     event.preventDefault();
@@ -36,7 +36,7 @@ try{
     setError("");
     const data = await searchShows(search);
     setShows(data);
-}catch(error){
+}catch{
 setError("failed to search movies.");
 }finally{
     setLoading(false);
@@ -73,14 +73,14 @@ if(error){
           <div className="row g-4">
 {
     shows.slice(0,12).map((show) => (
-       <MovieCard key={show.id}show={show}onDetails={() => {}}  />
+       <MovieCard key={show.id}show={show}onDetails={setSelectedShow}  />
  
 
 
     ))
 }
           </div>
-          <MovieModal show={selectedShow}onClose={() => setSelectedShow(null)} />
+          <MovieModal show ={selectedShow}onClose={() => setSelectedShow(null)} />
 
         </div>
     )
