@@ -1,13 +1,20 @@
-
+import { BrowserRouter,Routes,Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Movies from "./pages/Movies";
 
 function App() {
  
 
   return (
-    <div className="container">
-      <h1 className="text-primary text-center">Movie Explorer</h1>
-      <button className="btn btn-secondary">Search Movie</button>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home/>} />
+<Route path="/Movies" element={<Movies />} />
+
+    </Routes>
+
+    </BrowserRouter>
+    
   )
 }
 
